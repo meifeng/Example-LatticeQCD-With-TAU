@@ -1,2 +1,2 @@
-# Example-LatticeQCD-With-TAU
-Case study of the TAU profiling tool with lattice QCD codes 
+# Lattice QCD With the TAU Profiling Tool
+Case study of the TAU profiling tool for lattice QCD codes 
