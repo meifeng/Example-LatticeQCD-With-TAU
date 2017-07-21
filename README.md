@@ -1,10 +1,10 @@
 # Lattice QCD With the TAU Profiling Tool
 
-There are 3 steps to running QCD with TAU on KNL.  This is only running the sampling method of TAU.
+There are 4 steps to running QCD with TAU on KNL.  This is only running the sampling method of TAU.
 1) configure and install TAU in your home area with the same compiler as QCD for running on KNL (Intel compiler and Intel MPI 2017) - see build-tau-mpiicpc.sh
 2) download and install QCD from link below and see QCD Makefile
 3) run tau_exec with QCD binary just created
-4) see the obtained profile information
+4) One obtains 1 profile for each thread, and 60 threads.  Concatenate them together with paraprof --pak outputName.pak 
 
 Quantum Chromodynamics (QCD) is the theory that describes the strong interactions between quarks and gluons that make up particles such as protons and neutrons. The numerical simulations of QCD are performed through the framework of Lattice QCD (LQCD), in which quarks and gluons are simulated in a discrete four-dimensional grid points. A typical LQCD workflow involves the following steps:
 1.	Generation of gluon field ensembles, which is done through Monte Carlo simulations with Molecular Dynamics updates (Hybrid Monte Carlo). These gluon field configurations are written to disk for the analysis in Steps 2-4. This step is very expensive and will benefit greatly from good strong scaling as we need to run one single (or just a couple) long Monte Carlo streams. 
