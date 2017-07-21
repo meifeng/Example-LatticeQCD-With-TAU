@@ -37,3 +37,11 @@ The following provenance information will be useful:
 ●	Interconnect Performance Characteristics 
 
 ●	Storage System Performance Characteristics
+
+There are 4 steps to running QCD with TAU on KNL
+1) configure and install TAU in your home area with the same compiler as QCD for running on KNL (Intel compiler and Intel MPI 2017)
+2) download and install QCD from link above
+3) Edit make file to run QCD
+4) run tau_exec where ?
+5) obtain profile information
+
