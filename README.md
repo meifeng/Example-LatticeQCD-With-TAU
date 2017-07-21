@@ -1,6 +1,6 @@
 # Lattice QCD With the TAU Profiling Tool
 
-There are 4 steps to running QCD with TAU on KNL.  This is only running the sampling method of TAU.
+There are 4 steps to running QCD with TAU on KNL.  This is only running the sampling (interposition) method of TAU.
 1) configure and install TAU in your home area with the same compiler as QCD for running on KNL (Intel compiler and Intel MPI 2017) - see build-tau-mpiicpc.sh
 2) download and install QCD from link below - see QCD Makefile build-qcd-grid.sh
 3) run tau_exec with QCD binary just created
