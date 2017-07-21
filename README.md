@@ -2,7 +2,7 @@
 
 There are 4 steps to running QCD with TAU on KNL.  This is only running the sampling method of TAU.
 1) configure and install TAU in your home area with the same compiler as QCD for running on KNL (Intel compiler and Intel MPI 2017) - see build-tau-mpiicpc.sh
-2) download and install QCD from link below and see QCD Makefile
+2) download and install QCD from link below - see QCD Makefile build-qcd-grid.sh
 3) run tau_exec with QCD binary just created
 4) One obtains 1 profile for each thread, and 60 threads.  Concatenate them together with paraprof --pak outputName.pak 
 
